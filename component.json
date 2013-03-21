@@ -5,6 +5,7 @@
   "dependencies": {},
   "styles": [
     "index.scss",
+    "_forms.scss",
     "controls/_control-checkbox.scss",
     "controls/_control-group.scss",
     "controls/_control-icon.scss",
