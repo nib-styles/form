@@ -1,0 +1,16 @@
+.control-checkbox {
+  @extend %basic-form-control;
+
+  a {
+    @extend .anchor-1;
+  }
+
+  input {
+    margin-right: 2px;
+  }
+
+  .control-checkbox__label {
+    display: inline-block;
+  }
+
+}

@@ -1,0 +1,63 @@
+.control-text {
+  @extend %basic-form-control;
+
+  input {
+    $height: baseline(1.5) + 2;
+    @include transition(border-color 0.3s ease-out());
+    @include border-box;
+    @include improve-text-rendering;
+    border: 1px solid $border-color;
+    height: $height;
+    line-height: 1;
+    padding: 0 9px;
+    width: 100%;
+    color: $grey;
+
+    // Bit dodgey, only fix for IE8
+    .no-boxshadow & {
+      line-height: $height;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px rgba($orange, 0.7);
+      outline: none;
+      border-color: $orange;
+    }
+
+    &.is-invalid,
+    &.input-validation-error {
+      background: $error-background-color;
+      color: $error-border-color;
+      border-color: $error-border-color;
+      &:focus {
+        box-shadow: 0 0 5px rgba($error-border-color, 0.5);
+      }
+    }
+
+  }
+
+  /**
+   * If a field is a confirmation field for another field, like a 
+   * confirm password field. We want to show a tick in the field when
+   * it becomes valid
+   */
+  &.control--confirmation {
+    input.is-matching {
+      background-image: component-url("nib-styles-form", "images/icon-tick-circle-green.png");
+      background-position: 98% 50%;
+      background-repeat: no-repeat;
+    }
+    input.is-not-matching {
+      
+    }
+  }
+
+  &.control__block {
+    display: block;
+  }
+
+  &.control__small input,
+  &.control--small input {
+    width: 100px;
+  }
+}

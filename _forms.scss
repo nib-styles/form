@@ -1,0 +1,58 @@
+// Form Examples. Forms are made up of control-group components. Spacing is mostly
+// handled by spacing classes and modifiers on the control-groups. If you require
+// a form control with unique styling, create a new control-group type.
+//
+// .form-horizontal - Horizontal controls
+
+%basic-form-control {
+  display: block;
+  margin-bottom: spacing(1.25);
+
+  .control__label,
+  & > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: spacing(0.5);
+  }
+
+  .control__text {
+    @extend .text-small;
+    @extend .copy;
+    display: block;
+    margin: spacing(0.5) 0;
+    color: $light-grey;
+    strong {
+      color: $grey;
+    }
+  }
+}
+
+.control-basic {
+  @extend %basic-form-control;
+}
+
+.form {
+
+  .control-group__help-block {
+    display: block;
+  }
+
+  .control-group__help-inline {
+    vertical-align: baseline;
+  }
+
+  label {
+    display: block;
+  }
+
+}
+
+.form-actions {
+  @include clear-floats;
+  // border-top: 1px solid $border-color;
+  .form-actions__primary,
+  .form-actions__secondary {
+    float: right;
+    margin-left: $spacing-small;
+  }
+}

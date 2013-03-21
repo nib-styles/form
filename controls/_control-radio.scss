@@ -1,0 +1,26 @@
+.control-radio {
+  @extend %basic-form-control;
+
+  display: inline-block;
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -7px;
+    &:checked + .control-radio__label {
+      background: darken( $lighter-grey, 5% );
+    }
+  }
+
+  .control-radio__label {
+    display: block;
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 15px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+  
+}

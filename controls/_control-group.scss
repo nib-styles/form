@@ -1,0 +1,9 @@
+.control-group {
+  border: 1px solid transparent;
+  &.is-invalid,
+  &.input-validation-error {
+    background: $error-background-color;
+    color: $error-border-color;
+    border-color: $error-border-color;
+  }
+}

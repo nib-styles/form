@@ -1,0 +1,24 @@
+.control-textarea {
+  @extend %basic-form-control;
+
+  textarea {
+    @include transition(all 0.3s ease-out());
+    border: 1px solid $border-color;
+    padding: 9px;
+    width: 100%;
+    min-height: baseline(7);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    &.is-invalid {
+      background: $error-background-color;
+      color: $error-border-color;
+      border-color: $error-border-color;
+    }
+  }
+
+  &.control--block {
+    display: block;
+  }
+
+}
