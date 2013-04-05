@@ -1,7 +1,7 @@
 {
   "name": "form",
   "main": "index.scss",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {},
   "styles": [
     "index.scss",
@@ -12,9 +12,11 @@
     "controls/_control-radio.scss",
     "controls/_control-select.scss",
     "controls/_control-text.scss",
-    "controls/_control-textarea.scss"
+    "controls/_control-textarea.scss",
+    "controls/_control-search.scss"
   ],
   "files": [
-    "images/icon-tick-circle-green.png"
+    "images/icon-tick-circle-green.png",
+    "images/search.svg"
   ]
 }
