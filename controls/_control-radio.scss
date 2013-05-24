@@ -1,9 +1,7 @@
 .control-radio {
   @extend %basic-form-control;
-
   display: inline-block;
   position: relative;
-
   input {
     position: absolute;
     top: 50%;
@@ -13,7 +11,6 @@
       background: darken( $lighter-grey, 5% );
     }
   }
-
   .control-radio__label {
     display: block;
     padding: 7px;
@@ -22,5 +19,17 @@
     border-radius: 5px;
     font-weight: normal;
   }
-  
+}
+
+.control-radio--inline {
+  .control-radio__label,
+  .control__label {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .control-radio__label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0;
+  }
 }
