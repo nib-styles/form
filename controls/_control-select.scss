@@ -20,6 +20,13 @@
     }
   }
 
+  .no-pointerevents.no-cssgradients & {
+    select {
+      height: 32px;
+      padding: 6px 5px;
+    }
+  }
+
   .pointerevents.cssgradients & {
 
     select {
