@@ -1,0 +1,117 @@
+.control-select {
+  display: block;
+  margin-bottom: 12.5px;
+}
+
+/**
+ * Select wrapper
+ */
+.select {
+  position: relative;
+  width: 100%;
+}
+.select.medium {
+  width: 210px;
+}
+.select.small {
+  width: 100px;
+}
+
+/**
+ * IE9
+ */
+.no-cssgradients .select select {
+  width: 100%;
+}
+
+/**
+ * IE. Make the select the same size at least.
+ */
+.no-pointerevents.no-cssgradients .select select {
+  height: 32px;
+  padding: 6px 5px;
+}
+
+/**
+ * Good browsers. Using pointer-events to get around IE10's
+ * half-support for the appearance property on selects
+ */
+.pointerevents.cssgradients .select select {
+  background: linear-gradient(top, white, #eeeeee);
+  appearance: none;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  line-height: 17px;
+  padding: 6px 14px 5px 10px;
+  box-shadow: 0 1px 0 0 white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  font-size: 13px;
+  color: #666666;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+.pointerevents.cssgradients .select select.is-invalid {
+  border-color: #a90000;
+}
+.pointerevents.cssgradients .select:hover select {
+  background: linear-gradient(top, white, #f2f2f2);
+}
+.pointerevents.cssgradients .select:hover:before {
+  background: linear-gradient(top, white, #dfdfdf);
+}
+
+/**
+ * The button and down arrow on the select are
+ * created using pseudo elements
+ */
+.pointerevents.cssgradients .select:before,
+.pointerevents.cssgradients .select:after {
+  content: '';
+  display: block;
+  position: absolute;
+  pointer-events: none;
+}
+
+/**
+ * Button on the right of the select
+ */
+.pointerevents.cssgradients .select:before {
+  background: linear-gradient(top, #f9f9f9, lightgrey);
+  width: 30px;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #b9b9b9;
+  box-shadow: 0 1px 0 0 #fff inset;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/**
+ * Triangle pointing down. Use borders to create
+ * a triangle that is scalable
+ */
+.pointerevents.cssgradients .select:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 7px 6.5px 0 6.5px;
+  border-top-color: #999999;
+  top: 13px;
+  right: 10px;
+}
+
+/**
+ * Disabled state
+ */
+.pointerevents.cssgradients .select.is-disabled select {
+  background: #F1F1F1;
+  box-shadow: none;
+  color: #AAA;
+  border-color: #CCC;
+}
+.pointerevents.cssgradients .select.is-disabled:before {
+  background: #EEE;
+  box-shadow: none;
+  border-color: #CCC;
+}

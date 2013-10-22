@@ -1,0 +1,21 @@
+/**
+ * Control descriptions
+ */
+.control__text {
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  margin: 5px 0;
+  color: #999999;
+}
+.control__text strong {
+  color: #666666;
+}
+.control__text a {
+  font-weight: normal;
+  color: #1f7c07;
+  text-decoration: underline;
+}
+.control__text a:hover {
+  color: #2bac0a;
+}

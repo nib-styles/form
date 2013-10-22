@@ -1,0 +1,37 @@
+.control-radio {
+  margin-bottom: 12.5px;
+  display: inline-block;
+  position: relative;
+}
+
+.control-radio input {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -7px;
+}
+
+.control-radio input:checked + .control-radio__label {
+  background: #e1e1e1;
+}
+
+.control-radio .control-radio__label {
+  display: block;
+  padding: 7px;
+  padding-left: 30px;
+  padding-right: 15px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.control-radio--inline .control-radio__label,
+.control-radio--inline .control__label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.control-radio--inline .control-radio__label {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 0;
+}

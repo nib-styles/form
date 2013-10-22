@@ -1,0 +1,51 @@
+/**
+ * Radio or checkbox that uses an icon
+ *
+ *  --------
+ *  | [x]  |
+ *  | ICON |
+ *  | TEXT |
+ *  |______|
+ */
+
+/*
+  <label class="control-icon">
+    <input name="Scale" type="radio" value="Single">
+    <div class="control__icon">
+        <i class="icon-household icon-household--singles"></i>
+    </div>
+    <span class="control__label">Singles</span>
+  </label>
+ */
+
+.control-icon {
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 10px 15px;
+  position: relative;
+  display: block;
+}
+
+.control-icon:hover {
+  background: #eeeeee;
+}
+
+.control-icon.control-icon--invisible input {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.control-icon input {
+  margin-bottom: 10px;
+  width: 13px;
+}
+
+.control-icon .control__label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}

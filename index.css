@@ -1,0 +1,13 @@
+.form label {
+  display: block;
+}
+
+.form-actions {
+  overflow: hidden;
+}
+
+.form-actions .form-actions__primary,
+.form-actions .form-actions__secondary {
+  float: right;
+  margin-left: 10px;
+}

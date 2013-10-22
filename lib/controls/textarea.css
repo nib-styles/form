@@ -1,0 +1,23 @@
+.control-textarea {
+  display: block;
+  margin-bottom: 12.5px;
+}
+
+.control-textarea textarea {
+  transition: all 0.3s ease-out;
+  border: 1px solid #b9b9b9;
+  padding: 9px;
+  width: 100%;
+  min-height: 140px;
+  box-sizing: border-box;
+}
+
+.control-textarea textarea.is-invalid {
+  background: #ffdcdc;
+  color: #a90000;
+  border-color: #a90000;
+}
+
+.control-textarea.control--block {
+  display: block;
+}

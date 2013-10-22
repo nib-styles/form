@@ -1,0 +1,24 @@
+.control,
+.control-basic {
+  display: block;
+  margin-bottom: 12.5px;
+}
+
+.control__label,
+.control-label,
+.control > label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.control--box {
+  box-sizing: border-box;
+  background: #e6e6e6;
+  border-left: 1px solid lightgrey;
+  padding: 10px;
+  height: 52px;
+  vertical-align: middle;
+  font-size: 13px;
+  margin-bottom: 0;
+}

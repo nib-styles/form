@@ -1,0 +1,46 @@
+.control-group {
+  border: 1px solid transparent;
+}
+
+.control-group.is-invalid,
+.control-group.input-validation-error {
+  background: #ffdcdc;
+  color: #a90000;
+  border-color: #a90000;
+}
+
+/**
+ * Help text - Block style
+ */
+.control-group__help-block {
+  display: block;
+}
+
+/**
+ * Inline help text
+ */
+.control-group__help-inline {
+  vertical-align: baseline;
+}
+
+/**
+ * Row of inline controls
+ */
+.control-group--row {
+  border: 0;
+}
+.control-group--row:hover {
+  background: white;
+}
+.control-group--row:hover .control-group__title {
+  color: #1f7c07;
+}
+.control-group--row:hover .control--box {
+  background: #eeeeee;
+}
+.control-group--row .control-group__title {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 52px;
+  padding-left: 20px;
+}

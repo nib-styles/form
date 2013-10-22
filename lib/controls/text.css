@@ -1,0 +1,73 @@
+.control-text {
+  display: block;
+  margin-bottom: 12.5px;
+}
+
+/**
+ * Inline modifier
+ */
+.control-text--inline input,
+.control-text--inline .control__label {
+  display: inline-block;
+}
+
+/**
+ * Small modifier
+ */
+.control-text.control__small input,
+.control-text.control--small input {
+  width: 100px;
+}
+
+.control-text input {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  transition: border-color 0.3s ease-out;
+  border: 1px solid #b9b9b9;
+  height: 32px;
+  line-height: 1;
+  padding: 0 9px;
+  width: 100%;
+  color: #666666;
+}
+
+/**
+ * Fallback styles
+ */
+.no-boxshadow .control-text input {
+  line-height: 32px;
+}
+
+/**
+ * Focus states
+ */
+.control-text input:focus {
+  box-shadow: 0 0 5px rgba(254, 156, 0, 0.7);
+  outline: none;
+  border-color: #fe9c00;
+}
+
+/**
+ * Invalid states
+ */
+.control-text input.is-invalid,
+.control-text input.input-validation-error {
+  background: #ffdcdc;
+  color: #a90000;
+  border-color: #a90000;
+}
+.control-text input.is-invalid:focus,
+.control-text input.input-validation-error:focus {
+  box-shadow: 0 0 5px rgba(169, 0, 0, 0.5);
+}
+
+/**
+ * Matching states
+ */
+.control-text.control--confirmation input.is-matching {
+  background-image: url("../../images/icon-tick-circle-green.png");
+  background-position: 98% 50%;
+  background-repeat: no-repeat;
+}
+
+

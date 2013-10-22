@@ -1,19 +1,20 @@
 {
   "name": "form",
-  "main": "index.scss",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "dependencies": {},
   "styles": [
-    "index.scss",
-    "_forms.scss",
-    "controls/_control-checkbox.scss",
-    "controls/_control-group.scss",
-    "controls/_control-icon.scss",
-    "controls/_control-radio.scss",
-    "controls/_control-select.scss",
-    "controls/_control-text.scss",
-    "controls/_control-textarea.scss",
-    "controls/_control-search.scss"
+    "index.css",
+    "lib/group.css",
+    "lib/text.css",
+    "lib/themes.css",
+    "lib/controls/control.css",
+    "lib/controls/checkbox.css",
+    "lib/controls/icon.css",
+    "lib/controls/radio.css",
+    "lib/controls/search.css",
+    "lib/controls/select.css",
+    "lib/controls/text.css",
+    "lib/controls/textarea.css"
   ],
   "files": [
     "images/icon-tick-circle-green.png",

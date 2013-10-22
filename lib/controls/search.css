@@ -1,0 +1,37 @@
+.control-search.control--mobile {
+  display: block;
+  margin: 7px 0;
+  position: relative;
+}
+
+.control-search.control--mobile:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 11px;
+  height: 15px;
+  width: 15px;
+  background: url("../../images/search.svg") no-repeat;
+  background-size: 15px 15px;
+}
+
+.control-search.control--mobile input {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  border: 0;
+  height: 25px;
+  line-height: 1;
+  padding: 0 35px 0 10px;
+  width: 100%;
+  color: #666666;
+  border-radius: 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+  background: #dadada;
+  font-size: 13px;
+}
+
+.control-search.control--mobile input:focus {
+  outline: 0;
+  background: #fff;
+}
