@@ -38,7 +38,8 @@
  */
 .pointerevents.cssgradients .select select {
   background: linear-gradient(top, white, #eeeeee);
-  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: 1px solid #b9b9b9;
   border-radius: 3px;
   line-height: 17px;
