@@ -37,7 +37,7 @@
  * half-support for the appearance property on selects
  */
 .pointerevents.cssgradients .select select {
-  background: linear-gradient(top, white, #eeeeee);
+  background: linear-gradient(to bottom, white, #eeeeee);
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 1px solid #b9b9b9;
@@ -55,10 +55,10 @@
   border-color: #a90000;
 }
 .pointerevents.cssgradients .select:hover select {
-  background: linear-gradient(top, white, #f2f2f2);
+  background: linear-gradient(to bottom, white, #f2f2f2);
 }
 .pointerevents.cssgradients .select:hover:before {
-  background: linear-gradient(top, white, #dfdfdf);
+  background: linear-gradient(to bottom, white, #dfdfdf);
 }
 
 /**
@@ -77,7 +77,7 @@
  * Button on the right of the select
  */
 .pointerevents.cssgradients .select:before {
-  background: linear-gradient(top, #f9f9f9, lightgrey);
+  background: linear-gradient(to bottom, #f9f9f9, lightgrey);
   width: 30px;
   border-radius: 0 3px 3px 0;
   border: 1px solid #b9b9b9;

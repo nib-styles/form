@@ -1,6 +1,6 @@
 .form--primary {
   background: #eee;
-  background: linear-gradient(top, white, #eeeeee), #eeeeee;
+  background: linear-gradient(to bottom, white, #eeeeee), #eeeeee;
   overflow: hidden;
 }
 
