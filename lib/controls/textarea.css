@@ -4,7 +4,6 @@
 }
 
 .control-textarea textarea {
-  transition: all 0.3s ease-out;
   border: 1px solid #b9b9b9;
   padding: 9px;
   width: 100%;
