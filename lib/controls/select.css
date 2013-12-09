@@ -38,8 +38,6 @@
  */
 .pointerevents.cssgradients .select select {
   background: linear-gradient(to bottom, white, #eeeeee);
-  -webkit-appearance: none;
-  -moz-appearance: none;
   border: 1px solid #b9b9b9;
   border-radius: 3px;
   line-height: 17px;
@@ -50,6 +48,10 @@
   cursor: pointer;
   font-weight: bold;
   width: 100%;
+  margin: 0;
+  -webkit-appearance: none; */
+  -moz-appearance: none !important;
+  appearance: none;
 }
 .pointerevents.cssgradients .select select.is-invalid {
   border-color: #a90000;
