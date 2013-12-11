@@ -24,11 +24,11 @@
   -webkit-font-smoothing: antialiased;
   transition: border-color 0.3s ease-out;
   border: 1px solid #b9b9b9;
+  color: #666666;
   height: 32px;
   line-height: 32px;
   padding: 0 9px;
   width: 100%;
-  color: #666666;
 }
 
 /**
