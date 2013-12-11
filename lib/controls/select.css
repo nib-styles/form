@@ -49,8 +49,6 @@
   font-weight: bold;
   width: 100%;
   margin: 0;
-  -webkit-appearance: none; */
-  -moz-appearance: none !important;
   appearance: none;
 }
 .pointerevents.cssgradients .select select.is-invalid {
