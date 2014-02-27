@@ -25,7 +25,7 @@
 }
 
 /** Hide the expand arrow on IE11 **/
-.select select::-ms-expand {
+.pointerevents .select select::-ms-expand {
   display: none;
 }
 
