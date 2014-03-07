@@ -24,6 +24,11 @@
   width: 100%;
 }
 
+/** Hide the expand arrow on IE11 **/
+.pointerevents .select select::-ms-expand {
+  display: none;
+}
+
 /**
  * IE. Make the select the same size at least.
  */
